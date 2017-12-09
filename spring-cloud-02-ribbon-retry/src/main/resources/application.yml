@@ -1,0 +1,43 @@
+spring:
+  application: 
+    name: retry-service
+  cloud:
+    loadbalancer:
+      retry:
+        enabled: true ##启用retry
+
+server:
+  context-path: /
+  port: 7004
+  
+eureka:
+  client:
+    service-url:
+      ##单点配置:
+      defaultZone: http://eureka1:8001/eureka/
+#断路器超时时间
+hystrix:
+  command:
+    defule:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000
+
+custom:
+  rest:
+    connect-timeout: 1000
+    connection-rest-imeout: 1000
+    read-timeout: 3000
+
+
+client-service:
+  ribbon:
+#    ConnectTimeout: 250  ##连接超时时间
+#    ReadTimeout: 1000   ##处理超时时间
+    OkToRetryOnAllOperations: true  ##是否对所有请求都进行重试
+    MaxAutoRetriesNextServer: 2  ##重试时切换实例的次数
+    MaxAutoRetries: 1 ##最大重试次数
+
+
+  
