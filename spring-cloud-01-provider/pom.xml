@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>spring-cloud-01-provider</artifactId>
-    <name>spring-cloud-01-consumer</name>
+    <name>spring-cloud-01-provider</name>
     <description>spring-cloud-01-provider</description>
 
     <dependencies>
