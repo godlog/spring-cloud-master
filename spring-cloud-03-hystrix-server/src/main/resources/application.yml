@@ -1,15 +1,14 @@
 spring:
-  application: 
-    name: request-service
+  application:
+    name: eureka-server
 
 server:
-  context-path: /
-  port: 7003
-  
+  port: 8001
 eureka:
+  instance:
+    hostname: eureka1
+    lease-renewal-interval-in-seconds: 10  ##服务器（注册中心）租期到期的时间, 也就是说服务器在收到最后一次心跳的时间上线
+    lease-expiration-duration-in-seconds: 120 ##服务器（注册中心）租期到期的时间, 也就是说服务器在收到最后一次心跳的时间上线
   client:
     service-url:
-      ##单点配置:
-      defaultZone: http://eureka1:8001/eureka/
-
-  
+      defaultZone: http://eureka1:8001/eureka/  ##互相注册到对方--高可用服务发现

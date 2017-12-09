@@ -9,9 +9,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-cloud-03-hystrix-request</artifactId>
-    <name>spring-cloud-03-hystrix-request</name>
-    <description>spring-cloud-03-hystrix-request</description>
+    <artifactId>spring-cloud-03-hystrix-request-a</artifactId>
+    <name>spring-cloud-03-hystrix-request-a</name>
+    <description>spring-cloud-03-hystrix-request-a</description>
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -20,6 +20,10 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-eureka</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-hystrix</artifactId>
         </dependency>
 
     </dependencies>
@@ -44,7 +48,7 @@
 
 
     <build>
-        <finalName>spring-cloud-03-hystrix-request</finalName>
+        <finalName>spring-cloud-03-hystrix-request-a</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

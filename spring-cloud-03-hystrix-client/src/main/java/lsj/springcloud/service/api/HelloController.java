@@ -9,12 +9,20 @@ import org.springframework.web.bind.annotation.*;
  * @version:1.0.0
  */
 @RestController
-public class UserController {
+public class HelloController {
 
     @RequestMapping(value = "/hello", method = {RequestMethod.GET})
-    public String hello() {
+    public String hello() throws InterruptedException {
+        Thread.sleep(3000);
         System.err.println("hello ---");
         return "hello hystrix";
+    }
+
+    @RequestMapping(value = "/hi", method = {RequestMethod.GET})
+    public String hi() throws InterruptedException {
+        Thread.sleep(3000);
+        System.err.println("hi ---");
+        return "hi hystrix";
     }
 
 
