@@ -9,38 +9,34 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-cloud-03-hystrix-client</artifactId>
-    <name>spring-cloud-03-hystrix-client</name>
-    <description>spring-cloud-03-hystrix-client</description>
+    <artifactId>spring-cloud-03-hystrix-turbine</artifactId>
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-config</artifactId>
-        </dependency>
+
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-eureka</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-ribbon</artifactId>
+            <artifactId>spring-cloud-starter-turbine</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
     </dependencies>
 
-
-
-
     <build>
-        <finalName>spring-cloud-03-hystrix-client</finalName>
+        <finalName>spring-cloud-03-hystrix-turbine</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <!-- 主函数的入口 -->
                     <mainClass>lsj.springcloud.Application</mainClass>
                 </configuration>
             </plugin>
         </plugins>
     </build>
+
 </project>

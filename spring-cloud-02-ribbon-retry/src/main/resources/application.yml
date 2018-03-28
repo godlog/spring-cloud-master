@@ -37,7 +37,7 @@ client-service:
 #    ReadTimeout: 1000   ##处理超时时间
     OkToRetryOnAllOperations: true  ##是否对所有请求都进行重试
     MaxAutoRetriesNextServer: 2  ##重试时切换实例的次数
-    MaxAutoRetries: 1 ##最大重试次数
+    MaxAutoRetries: 1 ## 当前节点最大重试次数
 
 
   

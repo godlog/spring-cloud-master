@@ -5,20 +5,18 @@ spring:
 
 server:
   context-path: /
-  port: 6001
-  
+  port: 6003
+
 eureka:
   client:
     service-url:
-      ##单点配置:
       defaultZone: http://eureka1:8001/eureka/
-#断路器超时时间
-hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 2000
+
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 1000
+
 
 custom:
   rest:
-    connect-timeout: 10000
-    connection-rest-imeout: 10000
-    read-timeout: 30000
-
-
+    Connect-timeout: 1000
+    Connection-request-timeout: 1000
+    read-timeout: 5000

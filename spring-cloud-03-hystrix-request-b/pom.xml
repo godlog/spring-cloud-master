@@ -9,13 +9,14 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-cloud-03-hystrix-client</artifactId>
-    <name>spring-cloud-03-hystrix-client</name>
-    <description>spring-cloud-03-hystrix-client</description>
+    <artifactId>spring-cloud-03-hystrix-request-b</artifactId>
+    <name>spring-cloud-03-hystrix-request-b</name>
+    <description>spring-cloud-03-hystrix-request-b</description>
+
     <dependencies>
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-config</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -23,15 +24,16 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-ribbon</artifactId>
+            <artifactId>spring-cloud-starter-hystrix</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
     </dependencies>
 
-
-
-
     <build>
-        <finalName>spring-cloud-03-hystrix-client</finalName>
+        <finalName>spring-cloud-03-hystrix-request-b</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -43,4 +45,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>
