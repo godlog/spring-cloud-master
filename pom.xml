@@ -19,7 +19,7 @@
      <!-- 进行聚合的子项目 --> 
      <modules>
 
-         <module>spring-cloud-01-eureka-a</module>
+         <!--<module>spring-cloud-01-eureka-a</module>
          <module>spring-cloud-01-eureka-b</module>
          <module>spring-cloud-01-provider</module>
          <module>spring-cloud-01-consumer</module>
@@ -30,9 +30,14 @@
          <module>spring-cloud-02-ribbon-retry</module>
          <module>spring-cloud-03-hystrix-client</module>
          <module>spring-cloud-03-hystrix-request-a</module>
+         <module>spring-cloud-03-hystrix-request-b</module>
          <module>spring-cloud-03-hystrix-dashboard</module>
+         <module>spring-cloud-03-hystrix-turbine</module>
+         <module>spring-cloud-03-hystrix-server</module>
+-->
 
-
+         <module>spring-cloud-04-feign-provider</module>
+         <module>spring-cloud-04-feign-consumer</module>
      </modules>
       
     <properties>
